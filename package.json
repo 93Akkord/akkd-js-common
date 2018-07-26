@@ -2,7 +2,10 @@
     "name": "akkd-js-common",
     "version": "0.2.0",
     "description": "A collection of common JavaScript helper functions.",
-    "main": ".src/index.js",
+    "main": ".dist/index.js",
+    "typings": [
+        ".dist/index.d.ts"
+    ],
     "scripts": {
         "test": "mocha --reporter spec",
         "cover": "node node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- -R spec test/*"

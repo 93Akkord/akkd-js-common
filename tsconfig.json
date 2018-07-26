@@ -12,11 +12,11 @@
             // "es2017"
         // ],
         /* Allow javascript files to be compiled. */
-        "allowJs": true,
+        // "allowJs": true,
         /* Report errors in .js files. */
-        "checkJs": true,
+        // "checkJs": true,
         // "jsx": "preserve",                     /* Specify JSX code generation: 'preserve', 'react-native', or 'react'. */
-        // "declaration": true,                   /* Generates corresponding '.d.ts' file. */
+        "declaration": true,                   /* Generates corresponding '.d.ts' file. */
         // "declarationMap": true,                /* Generates a sourcemap for each corresponding '.d.ts' file. */
         // "sourceMap": true,                     /* Generates corresponding '.map' file. */
         /* Concatenate and emit output to single file. */

@@ -11,16 +11,22 @@ if (!helpers_1.isNode()) {
             return (this.parentElement) ? this.parentElement.getBackgroundColor() : null;
     };
     Object.defineProperty(Element.prototype, 'index', {
-        get: function () {
-            var nodes = Array.prototype.slice.call(this.parentElement.children);
-            return nodes.indexOf(this);
+        get() {
+            var parent = this.parentElement;
+            if (parent) {
+                var nodes = Array.prototype.slice.call(parent.children);
+                return nodes.indexOf(this);
+            }
+            else {
+                return -1;
+            }
         },
         configurable: true,
         enumerable: true
     });
 }
 exports.ListenerTracker = (function () {
-    class _ListenerTracker {
+    var _ListenerTracker = class _ListenerTracker {
         constructor() {
             this.isActive = false;
             // listener tracking datas
@@ -46,7 +52,7 @@ exports.ListenerTracker = (function () {
             return this._listeners_[this._elements_.indexOf(element)];
         }
         ;
-    }
+    };
     var listenerTracker = new _ListenerTracker();
     var intercepEventsListeners = function () {
         // backup overrided methods

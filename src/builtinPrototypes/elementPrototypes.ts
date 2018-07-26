@@ -43,7 +43,7 @@ if (!isNode()) {
 }
 
 export var ListenerTracker = (function() {
-    class _ListenerTracker {
+    var _ListenerTracker = class _ListenerTracker {
         public isActive = false;
         // listener tracking datas
         public _elements_: any[] = [];
