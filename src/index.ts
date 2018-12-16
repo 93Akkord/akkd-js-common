@@ -22,7 +22,14 @@ import {
     printProps,
     printPropsNew
 } from './helpers/helpers';
+import * as helpers from './helpers/helpers';
+import StringBuilder from './classes/text/StringBuilder';
 import { measure } from './utils/performance'
+
+export {
+    helpers,
+    StringBuilder
+};
 
 // (async function () {
 //     const _global = (typeof window !== 'undefined') ? window : global as any;

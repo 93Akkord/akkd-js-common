@@ -1,5 +1,5 @@
 import { merge, getType, equals } from '../helpers/helpers';
-import { StringBuilder } from '../classes/text/StringBuilder'
+import '../classes/text/StringBuilder';
 
 declare global {
     interface JSON {

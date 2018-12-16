@@ -7,7 +7,7 @@ declare global {
         clear(): void;
     }
 }
-export declare class StringBuilder extends Array {
+export default class StringBuilder extends Array {
     id: number;
     append(str: string, ...args: any[]): StringBuilder;
     appendLine(str: string, ...args: any[]): StringBuilder;

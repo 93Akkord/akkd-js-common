@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Debug Node.js",
+            "program": "${file}",
+            "request": "launch",
+            "type": "node",
+            "outputCapture": "std"
+        },
+        {
             "type": "node",
             "request": "launch",
             "name": "Debug File",

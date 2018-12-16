@@ -12,7 +12,7 @@ declare global {
 
 const _global = (typeof window !== 'undefined') ? window : global as any;
 
-export class StringBuilder extends Array {
+export default class StringBuilder extends Array {
     id: number = randomInt(1000, 9999);
 
     append(str: string, ...args: any[]): StringBuilder {

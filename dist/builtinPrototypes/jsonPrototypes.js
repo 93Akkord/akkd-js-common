@@ -1,11 +1,11 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const helpers_1 = require("../helpers/helpers");
-const StringBuilder_1 = require("../classes/text/StringBuilder");
+require("../classes/text/StringBuilder");
 JSON.stringifyEx = function (obj, spaces = 4, maxLevel = 0, includeFunctionBodies = false, includeFunctions = true) {
     var indentStr = ' '.repeat(spaces);
     var newLineChar = (spaces == 0) ? ' ' : '\n';
     function _stringifyEx(obj, indentLevel = 0, parent) {
-        var sb = new StringBuilder_1.StringBuilder();
+        var sb = new StringBuilder();
         var objType = helpers_1.getType(obj, true);
         var openBracket = (['Object', 'process', 'global'].includes(objType)) ? '{' : '[';
         var closeBracket = (['Object', 'process', 'global'].includes(objType)) ? '}' : ']';

@@ -27,5 +27,5 @@ class StringBuilder extends Array {
         this.length = 0;
     }
 }
-exports.StringBuilder = StringBuilder;
+exports.default = StringBuilder;
 _global.StringBuilder = StringBuilder;
